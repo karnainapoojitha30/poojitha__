@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{background-color:#f0f8ff;}
+    </style>
+        
+</head>
+<body>
+    <center>
+   <h1>Registration Form</h1>
+   <div>
+    <form action="/submit_registration" method="post">
+         <label for="name">First Name:</label>
+         <input type="text" id="name" name="name" required>
+         <label for="name">Last Name:</label>
+         <input type="text" id="name" name="name"required><br><br>
+         
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+         
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required><br><br>
+         <label for="DOB">Date Of Birth</label>
+         <input type="date" id="DOB" name="DOB" required>
+         <label for="Gender">Gender:</label>
+         <input type="radio" id="Male" name="Gender" value="Male">Male
+         <input type="radio" id="Female" name="Gender" value="Female">Female
+         <input type="radio" id="Other" name="Gender" value="Other">Other<br><br>
+         <label for="Phone Number">Phone Number:</label>
+         <input type="text" id="Phone" name="Phone" required><br><br>
+         <label for="Subject">Subject</label>
+            <select id="Subject" name="Subject">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="AI">AI</option>
+                <option value="AWS">AWS</option>
+            </select><br><br>
+         <input type="submit" value="submit">
+        </div>
+    </form>
+        </center> 
+</body>
+</html>
